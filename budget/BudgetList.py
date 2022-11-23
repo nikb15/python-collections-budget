@@ -41,9 +41,9 @@ def main():
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
     print('The count of all expenses: ' + str(len(myBudgetList)))
-    # print("Calling iter function")
-    # for entry in myBudgetList:
-    #     print(entry)
+    print("Calling iter function")
+    for entry in myBudgetList:
+        print(entry)
     fig,ax =plt.subplots()
     labels = ['Expenses', 'Overages', 'Budget']
     values = [myBudgetList.sum_expenses, myBudgetList.sum_overages, myBudgetList.budget]
