@@ -21,7 +21,11 @@ class BudgetList:
     def __len__(self):
         return self.expenses.__len__() + self.overages.__len__()
 
+    def __iter__(self):
+        pass
 
+    def __next__(self):
+        pass
 def main():
     myBudgetList = BudgetList(1200)
     expenses = Expense.Expenses()
